@@ -1,0 +1,13 @@
+:root {
+    --background-header-side: #17181B;
+    --border-header-side: #202226;
+    --setting-icon-color: #777;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
