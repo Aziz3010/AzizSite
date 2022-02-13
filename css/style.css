@@ -20,6 +20,24 @@
 body {
     font-family: 'Playfair Display', serif;
 }
+
+/* display of sections */
+section {
+    margin-left: 200px;
+    display: none;
+}
+
+section#Home {
+    display: block;
+}
+
+/* media */
+@media screen and (max-width: 767px) {
+    section {
+        margin-left: 0px;
+    }
+}
+
 /* End General */
 
 /* Start Header */
@@ -223,3 +241,5 @@ body {
 /* End Side-header */
 
 /* End Header */
+
+
