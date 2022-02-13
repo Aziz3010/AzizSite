@@ -87,6 +87,7 @@ body {
     background-color: var(--background-header);
     position: fixed;
     width: 200px;
+    height: 100vh;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -141,7 +142,7 @@ body {
 
 /* my-links */
 #side-header .my-links {
-    margin: 5px 0 100px 0;
+    margin: 5px 0;
 }
 
 #side-header .my-links ul li a {
@@ -165,6 +166,13 @@ body {
 
 #side-header .my-links ul li.active a {
     color: var(--font-icon-color-hovor);
+}
+
+/* social-copyright */
+.social-copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
 }
 
 /* social */
