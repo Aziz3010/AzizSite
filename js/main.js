@@ -38,7 +38,6 @@ allLinksHref.forEach((LinkHref)=>{
     LinkHref.addEventListener('click',function(e){
         let theSectionName = e.target.getAttribute('href');
         
-        
         // for each on all sections and remove active class
         allSections.forEach((Section)=>{
             Section.style.display = 'none';
@@ -46,9 +45,56 @@ allLinksHref.forEach((LinkHref)=>{
 
         // add active class to the selected section only
         let sectionSelected = document.querySelector(`${theSectionName}`);
-        sectionSelected.style.display = 'block';
+        sectionSelected.style.display = 'flex';
     })
 
 })
+
+// ////////////////////////////////////////////////////////////////
+// change title with animation
+let box = document.querySelector('#Home .title .title-changer #box');
+
+let content = 'Front End Developer';
+let letterNum = 1;
+
+function writeText(text){
+    box.innerText = text.slice(0,letterNum);
+    letterNum++;
+
+    if(letterNum > text.length){
+        letterNum = 1;
+        
+        if(content === 'Front End Developer'){
+            content = 'Back End Developer';
+        } else {
+            content = 'Front End Developer';
+        }
+    }
+}
+setInterval(()=>{writeText(content)},200);
+
+// ////////////////////////////////////////////////////////////////
+// plugin
+$(document).ready(function() {
+    $('#particles').particleground({
+      minSpeedX: 0.1,
+      maxSpeedX: 0.7,
+      minSpeedY: 0.1,
+      maxSpeedY: 0.7,
+      directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+      directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+      density: 10000, // How many particles will be generated: one particle every n pixels
+      dotColor: '#666666',
+      lineColor: '#666666',
+      particleRadius: 7, // Dot size
+      lineWidth: 1,
+      curvedLines: false,
+      proximity: 100, // How close two dots need to be before they join
+      parallax: true,
+      parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
+      onInit: function() {},
+      onDestroy: function() {}
+    });
+});
 
 // ////////////////////////////////////////////////////////////////
