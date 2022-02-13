@@ -257,7 +257,6 @@ section#Home {
     justify-content: center;
     align-items: center;
     position: relative;
-top: 50px;
     z-index: 0;
     overflow: hidden;
 }
