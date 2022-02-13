@@ -112,6 +112,10 @@ section#Home {
     z-index: 10;
     border-right: 1px solid var(--border-header-side);
     transition: left 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 #side-header.on {
@@ -188,9 +192,8 @@ section#Home {
 
 /* social-copyright */
 .social-copyright {
-    position: absolute;
     width: 100%;
-    bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /* social */
