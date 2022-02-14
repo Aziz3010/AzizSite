@@ -42,12 +42,18 @@ section#Home {
 
 /* Start Header */
 
+header {
+    position: relative;
+}
+
 /* Start top-header */
 #top-header {
     background-color: var(--background-header);
     color: #fff;
     display: none;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
 }
 
 #top-header .logo {
@@ -124,6 +130,22 @@ section#Home {
 
 #side-header.off {
     left: -200px;
+}
+
+/* testLayOut */
+@media screen and (max-width: 767px) {
+    #testLayOut {
+        display: none;
+        background-color: transparent;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
 }
 
 /* image */
@@ -264,7 +286,10 @@ section#Home {
 #ovarlay {
     position: absolute;
     width: 100%;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 200px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -339,7 +364,13 @@ section#Home {
     background-color: var(--font-icon-color-hovor);
 }
 
-/*  */
+/* media */
+@media screen and (max-width: 767px) {
+    #ovarlay {
+        left: 0px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     #Home .caption h1 {
         font-size: 30px;
