@@ -274,7 +274,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 50px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,6 +366,10 @@ header {
 
 /* media */
 @media screen and (max-width: 767px) {
+    #Home {
+        height: calc(100vh - 50px);
+    }
+    
     #ovarlay {
         left: 0px;
     }
