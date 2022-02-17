@@ -103,6 +103,102 @@ ul {
 
 /* End General */
 
+/* start loading page */
+.loading-page {
+    background-color: #2C2D2F;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading-page-disappear {
+    display: none;
+}
+
+.loading-page .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading-page .text-box img {
+    width: 115px;
+    height: 120px;
+}
+
+.loading-page .text-box .circles {
+    margin-top: .8rem;
+}
+
+.loading-page .text-box .circles span {
+    width: 12px;
+    height: 12px;
+    margin-right: 1px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.loading-page .text-box .circles span:last-child {
+    margin-right: 0px;
+}
+
+.loading-page .text-box .circles span.circle-animation {
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.loading-page .text-box .circles span.circle-animation:nth-child(1){
+    background-color: #007DB6;
+    animation-delay: 0s;
+}
+.loading-page .text-box .circles span.circle-animation:nth-child(2){
+    background-color: #008FB2;
+    animation-delay: 0.2s;
+}
+.loading-page .text-box .circles span.circle-animation:nth-child(3){
+    background-color: #009B9E;
+    animation-delay: 0.4s;
+}
+.loading-page .text-box .circles span.circle-animation:nth-child(4){
+    background-color: #00A77D;
+    animation-delay: 0.6s;
+}
+.loading-page .text-box .circles span.circle-animation:nth-child(5){
+    background-color: #00B247;
+    animation-delay: 0.8s;
+}
+.loading-page .text-box .circles span.circle-animation:nth-child(6){
+    background-color: #5AB027;
+    animation-delay: 1s;
+}
+.loading-page .text-box .circles span.circle-animation:nth-child(7){
+    background-color: #A0B61E;
+    animation-delay: 1.2s;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/* end loading page */
+
 /* Start Header */
 
 header {
@@ -616,20 +712,23 @@ header {
 
 #Resume .row ul li .content h5 {
     color: var(--font-icon-color-hovor);
-    font-weight: 800;
-    margin: 0 0 8px 0;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
 }
 
 #Resume .row ul li .content h6 {
     color: var(--changerColor);
     font-weight: 700;
+    text-transform: uppercase;
     font-size: 12px;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
 }
 
 #Resume .row ul li .content p {
     color: var(--font-icon-color-hovor);
-    font-weight: 700;
+    font-size: 14px;
     line-height: 1.5;
     margin: 0;
     padding-right: 3rem;
@@ -637,12 +736,12 @@ header {
 
 #Resume .row ul li .years span {
     color: var(--font-icon-color-hovor);
-    width: 45px;
+    width: 55px;
     overflow: hidden;
     text-align: center;
     position: absolute;
-    left: -50px;
-    font-size: 15px;
+    left: -60px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -702,6 +801,30 @@ header {
 }
 
 /* End Resume */
+
+/* Start Portfolio */
+
+#Portfolio {
+    background-color: var(--background-section);
+    padding: 3rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Portfolio */
 
 /* Start Contact */
 #Contact {
@@ -893,19 +1016,6 @@ header {
 }
 
 /* End Contact */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* start bootstrab */
 .container {

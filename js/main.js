@@ -111,3 +111,9 @@ $(document).ready(function() {
 });
 
 // ////////////////////////////////////////////////////////////////
+// when page loading disappear loading-page
+let loading_page = document.getElementById('loading-page');
+
+setTimeout( function(){
+    loading_page.classList.add('loading-page-disappear');
+}, 2000)
