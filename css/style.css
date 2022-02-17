@@ -807,8 +807,13 @@ header {
 #Portfolio {
     background-color: var(--background-section);
     padding: 3rem 0;
+    height: 100vh;
 }
 
+#Portfolio h3 {
+    color: #fff;
+    text-align: center;
+}
 
 
 
