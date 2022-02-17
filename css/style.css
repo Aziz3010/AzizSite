@@ -703,6 +703,196 @@ header {
 
 /* End Resume */
 
+/* Start Contact */
+#Contact {
+    background-color: var(--background-section);
+    padding: 3rem 0 0 0;
+}
+
+#Contact form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#Contact .top-inp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0 0;
+    margin-bottom: 2.5rem;
+}
+
+#Contact .top-inp .inp-group,
+#Contact .textarea-group {
+    position: relative;
+}
+
+#Contact .inp-group input,
+#Contact textarea {
+    border: 2px solid var(--font-icon-color-hovor);
+    caret-color: var(--font-icon-color-hovor);
+    color: var(--font-icon-color-hovor);
+    background-color: transparent;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 17px;
+    outline: none;
+}
+
+#Contact .inp-group input {
+    width: 300px;
+}
+
+#Contact .inp-group label,
+#Contact .textarea-group label {
+    color: var(--font-icon-color-hovor);
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: top var(--transition) , transform var(--transition);
+}
+
+#Contact .textarea-group label {
+    top: 20px;
+}
+
+#Contact .textarea-group textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+#Contact .inp-group input:valid,
+#Contact .inp-group input:focus,
+#Contact .textarea-group textarea:valid,
+#Contact .textarea-group textarea:focus {
+    border-color: #fff;
+}
+
+#Contact .inp-group input:valid ~ label ,
+#Contact .inp-group input:focus ~ label,
+#Contact .textarea-group textarea:valid ~ label ,
+#Contact .textarea-group textarea:focus ~ label {
+    top: -25px;
+    font-size: 15px;
+    transform: translate(-10px,0);
+
+}
+
+#Contact .button-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#Contact .button-box button {
+    outline: none;
+    border: 2px solid var(--changerColor);
+    color: var(--changerColor);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 0;
+    transition: color var(--transition);
+}
+
+#Contact .button-box button::before,
+#Contact .button-box button::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    background-color: var(--changerColor);
+    transition: width var(--transition);
+    z-index: -1;
+}
+
+#Contact .button-box button::before {
+    right: 50%;
+}
+
+#Contact .button-box button::after {
+    left: 50%;
+}
+
+#Contact .button-box button:hover::after,
+#Contact .button-box button:hover::before {
+    width: 50%;
+}
+
+#Contact .button-box button:hover {
+    color: #fff;
+}
+
+#Contact .row {
+    margin: 4rem 0;
+}
+
+#Contact .row .data {
+    background-color: #3b3c43;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Contact .row .data i {
+    color: var(--changerColor);
+    font-size: 30px;
+}
+
+#Contact .row .data p {
+    margin: 15px 0 0 0;
+    color: var(--font-icon-color-hovor);
+}
+
+#Contact .map {
+    width: 100%;
+}
+
+/* media */
+@media screen and (max-width: 910px) {
+    #Contact .top-inp {
+        flex-direction: column;
+        padding: 0;
+    }   
+
+    #Contact .top-inp .inp-group {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Contact .inp-group input {
+        width: 100%;
+    }
+
+    #Contact .button-box {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #Contact .button-box button {
+        width: 100%;
+    }
+    #Contact .map {
+        padding: 0 1rem;
+    }
+}
+
+/* End Contact */
+
 
 
 
