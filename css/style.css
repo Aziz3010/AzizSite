@@ -707,6 +707,7 @@ header {
 #Contact {
     background-color: var(--background-section);
     padding: 3rem 0 0 0;
+    flex-direction: column;
 }
 
 #Contact form {
