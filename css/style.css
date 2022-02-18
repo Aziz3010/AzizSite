@@ -678,7 +678,7 @@ header {
 
 #Resume .row ul li {
     padding: 15px 0 15px 30px ;
-    margin: 0 3rem 4rem 3rem;
+    margin: 0 0 4rem 4rem;
     position: relative;
 }
 
@@ -770,34 +770,31 @@ header {
 #Resume .row .progress-list li {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 0px;
 }
 
-#Resume .row .progress-list li label {
+#Resume .row .progress-list li .lable-span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Resume .row .progress-list li .lable-span label {
     color: var(--font-icon-color-hovor);
     margin: 0;
-    margin-right: 10px;
-    width: 20%;
+}
+
+#Resume .row .progress-list li .lable-span span {
+    color: var(--font-icon-color-hovor);
 }
 
 #Resume .row .progress-list li progress {
     height: 25px;
     width: 100%;
-}
-
-/* media */
-@media screen and (max-width: 815px) {
-    #Resume .row .progress-list li {
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0px;
-    }
-    
-    #Resume .row .progress-list li label {
-        margin-right: 0px;
-        width: fit-content;
-    }
 }
 
 /* End Resume */
