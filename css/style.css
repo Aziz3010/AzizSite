@@ -25,7 +25,7 @@ body {
 /* display of sections */
 section {
     margin-left: 200px;
-    display: none;
+    /* display: none; */
 }
 
 section#Home {

@@ -45,12 +45,21 @@ allLinks.forEach((Link)=>{
 // add display block to the section when click on links
 let allSections = document.querySelectorAll('body section');
 let allLinksHref = document.querySelectorAll('.my-links ul li a');
+let allLinksIcon = document.querySelectorAll('#side-header .my-links ul li a i');
 
 allLinksHref.forEach((LinkHref)=>{
-    // get href form clicked Ancur
+
     LinkHref.addEventListener('click',function(e){
-        let theSectionName = e.target.getAttribute('href');
-        
+
+        // check if clicked on anchor or icon
+        if(e.target == LinkHref.childNodes[1]) {
+            // get href form clicked icon's parent
+            var theSectionName = e.target.parentNode.getAttribute('href');
+        } else {
+            // get href form clicked Anchor
+            var theSectionName = e.target.getAttribute('href');
+        }
+
         // for each on all sections and remove active class
         allSections.forEach((Section)=>{
             Section.style.display = 'none';
@@ -59,6 +68,7 @@ allLinksHref.forEach((LinkHref)=>{
         // add active class to the selected section only
         let sectionSelected = document.querySelector(`${theSectionName}`);
         sectionSelected.style.display = 'flex';
+
     })
 
 })
