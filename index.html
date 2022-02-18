@@ -20,7 +20,7 @@
 
 <body>
     <!-- Start loading -->
-    <div style="display: none;" id="loading-page" class="loading-page">
+    <div id="loading-page" class="loading-page">
         <div class="text-box">
 
             <img src="./img/Aziz-Logo.png" alt="Aziz">
@@ -152,7 +152,7 @@
     <!-- End Header -->
 
     <!-- Start Home -->
-    <section style="display: none;" id="Home">
+    <section id="Home">
         <div id="particles"></div>
         <div id="ovarlay"></div>
 
@@ -172,7 +172,7 @@
     <!-- End Home -->
 
     <!-- Start About -->
-    <section style="display: none;" id="About">
+    <section id="About">
         <div class="container">
             <!-- top -> title -->
             <div class="head-title">
@@ -290,7 +290,7 @@
     <!-- End About -->
 
     <!-- Start Resume -->
-    <section style="display: none;" id="Resume">
+    <section id="Resume">
         <div class="container">
             <!-- top -> title -->
             <div class="head-title">
@@ -594,14 +594,37 @@
                 <h2 class="head-title-h2">Portfolio</h2>
                 <i class="fa-solid fa-briefcase fa-fw head-title-i"></i>
             </div>
-            
-            <h3>Cooming Soon</h3>
+
+            <!-- tabs -->
+            <div class="row">
+                <div class="tabs">
+                    <ul>
+                        <li><a data-tabs="All" class="clicked">All</a></li>
+                        <li><a data-tabs="Frontend">Frontend</a></li>
+                        <li><a data-tabs="Js">JavaScript</a></li>
+                        <li><a data-tabs="OOP">OOP</a></li>
+                        <li><a data-tabs="React">React</a></li>
+                        <!-- <li><a data-tabs="Backend">Backend</a></li> -->
+                        <li><a data-tabs="Full">Full Stack</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="proNum" class="row">
+                <!-- injection from Js -->
+            </div>
+
+            <!-- projects -->
+            <div id="projects" class="row">
+                <!-- injection from Js -->
+            </div>
+
         </div>
     </section>
     <!-- End Portfolio -->
 
     <!-- Start Contact -->
-    <section style="display: none;" id="Contact">
+    <section id="Contact">
         <div class="container">
             <!-- top -> title -->
             <div class="head-title">
@@ -691,7 +714,7 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <!-- plugin -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script

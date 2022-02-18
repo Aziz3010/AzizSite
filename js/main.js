@@ -1,3 +1,5 @@
+import projects from "./projects.js";
+
 // open side header when clicked on burger BTN
 let burgerBTN = document.getElementById('burgerBTN');
 let sideHeader = document.getElementById('side-header');
@@ -127,3 +129,121 @@ let loading_page = document.getElementById('loading-page');
 setTimeout( function(){
     loading_page.classList.add('loading-page-disappear');
 }, 2000)
+
+
+// import projects from projects.js file  and append it in projects div
+let projectsDiv = document.getElementById('projects');
+
+projects.forEach((project)=>{
+    projectsDiv.innerHTML += `
+    <div class="col-md-4 col-sm-6 ${project['class']}">
+        <div id="project">
+            <div class="top-box">
+                <div class="spans">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="link">
+                    <a target="_blank" href=${project['project-url']}>
+                        <i class="fa-solid fa-link"></i>
+                        Live
+                    </a>
+                </div>
+            </div>
+            <div class="web-pic">
+                <img src="./img/${project['project-pic-url']}.png" alt=${project['project-name']}>
+            </div>
+        </div>
+    </div> `
+})
+
+// ////////////////////////////////////////////////////////////////
+// get number of projects and put it in html
+let proNumDiv = document.getElementById('proNum');
+proNumDiv.innerHTML =  `<p>All Projects: <span>${projects.length}</span></p>`;
+
+// ////////////////////////////////////////////////////////////////
+// appear spacific projects when click on tabs
+let tabs = document.querySelectorAll('#Portfolio .tabs ul li a');
+
+let all = document.querySelectorAll('.col-md-4');
+let frontend = document.querySelectorAll('.Frontend');
+let javaScript = document.querySelectorAll('.Js');
+let oop = document.querySelectorAll('.OOP');
+let react = document.querySelectorAll('.React');
+// let backend = document.querySelectorAll('.Backend');
+let fullStack = document.querySelectorAll('.Full');
+
+console.log(react);
+
+// add clicked class to clicked tabs
+tabs.forEach((tab)=>{
+
+    tab.addEventListener('click',function(e){
+        
+        // for each on all tabs and remove clicked class
+        tabs.forEach((tab)=>{
+            tab.classList.remove('clicked');
+        })
+
+        // add clicked class to clicked tabs
+        e.target.classList.add('clicked')
+
+        // get data-tabs name from clicked tab
+        var selectedTabVal = e.target.getAttribute('data-tabs');
+        // console.log(selectedTabVal);
+
+        // hide all projects
+        all.forEach((ele)=>{
+            ele.style.display = 'none';
+        }) 
+
+
+        // appear projects by selected tab
+        switch (selectedTabVal) {
+            case 'All':
+                all.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                break;
+
+            case 'Frontend':
+                frontend.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                break;
+
+            case 'Js':
+                javaScript.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                break;
+
+            case 'OOP':
+                oop.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                break;
+                
+            case 'React':
+                react.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                break;
+
+            // case 'Backend':
+            //     backend.forEach((ele)=>{
+            //         ele.style.display = 'block';
+            //     })
+            //     break;
+
+            case 'Full':
+                fullStack.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                break;
+        }
+         
+    })
+})
