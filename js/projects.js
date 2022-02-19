@@ -1,23 +1,23 @@
 const projects = [
     {    
         'project-id' : 1,
-        'project-url' : 'https://aziz3010.github.io/Leon-Template/',
-        'project-pic-url' : 'Leon-Template',
-        'project-name' : 'Leon Template',
+        'project-url' : 'https://aziz3010.github.io/Stated-Template/',
+        'project-pic-url' : 'Stated-Template',
+        'project-name' : 'Stated Template',
         'class': 'Frontend'
     },
     {    
         'project-id' : 2,
-        'project-url' : 'https://aziz3010.github.io/Bakery/',
-        'project-pic-url' : 'Bakery-Site',
-        'project-name' : 'Bakery Site',
+        'project-url' : 'https://aziz3010.github.io/Apartment-Finder/',
+        'project-pic-url' : 'Apartment-Finder',
+        'project-name' : 'Apartment Finder',
         'class': 'Frontend'
     },
     {    
         'project-id' : 3,
-        'project-url' : 'https://aziz3010.github.io/Kasper-Template/',
-        'project-pic-url' : 'Kasper-Template',
-        'project-name' : 'Kasper Template',
+        'project-url' : 'https://aziz3010.github.io/Template-3/',
+        'project-pic-url' : 'Template-3',
+        'project-name' : 'Template 3',
         'class': 'Frontend'
     },
     {    
@@ -29,9 +29,9 @@ const projects = [
     },
     {    
         'project-id' : 5,
-        'project-url' : 'https://aziz3010.github.io/Apartment-Finder/',
-        'project-pic-url' : 'Apartment-Finder',
-        'project-name' : 'Apartment Finder',
+        'project-url' : 'https://aziz3010.github.io/Bakery/',
+        'project-pic-url' : 'Bakery-Site',
+        'project-name' : 'Bakery Site',
         'class': 'Frontend'
     },
     {    
@@ -43,9 +43,9 @@ const projects = [
     },
     {    
         'project-id' : 7,
-        'project-url' : 'https://aziz3010.github.io/Stated-Template/',
-        'project-pic-url' : 'Stated-Template',
-        'project-name' : 'Stated Template',
+        'project-url' : 'https://aziz3010.github.io/Kasper-Template/',
+        'project-pic-url' : 'Kasper-Template',
+        'project-name' : 'Kasper Template',
         'class': 'Frontend'
     },
     {    
@@ -57,9 +57,9 @@ const projects = [
     },
     {    
         'project-id' : 9,
-        'project-url' : 'https://aziz3010.github.io/Template-3/',
-        'project-pic-url' : 'Template-3',
-        'project-name' : 'Template 3',
+        'project-url' : 'https://aziz3010.github.io/Leon-Template/',
+        'project-pic-url' : 'Leon-Template',
+        'project-name' : 'Leon Template',
         'class': 'Frontend'
     },
     {    

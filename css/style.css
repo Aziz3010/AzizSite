@@ -199,6 +199,74 @@ ul {
 
 /* end loading page */
 
+/* Start Setting */
+
+.setting {
+    position: fixed;
+    right: 0px;
+    top: 60px;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: right var(--transition);
+}
+
+.setting.on {
+    right: 0px;
+}
+
+.setting.off {
+    right: -180px;
+}
+
+.setting-icon {
+    background-color: #f1f1f1;
+    border-radius: 3px 0 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting-icon i {
+    padding: .4rem;
+    font-size: 25px;
+    color: var(--changerColor);
+    cursor: pointer;
+}
+
+.setting-box {
+    background-color: #f1f1f1;
+    width: 180px;
+    padding: .6rem 1rem;
+    border-radius: 0 0 0 3px;
+}
+
+.setting-box h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--background-header);
+    user-select: none;
+}
+
+.setting-box .colors {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.setting-box .colors span {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 4px 3px;
+    cursor: pointer;
+}
+
+/* End Setting */
+
 /* Start Header */
 
 header {
@@ -493,7 +561,7 @@ header {
 }
 
 #Home .caption .title p {
-    color: var(--font-icon-color-hovor);
+    color: white;
     margin: 0;
     font-size: 25px;
 }
@@ -535,7 +603,8 @@ header {
 
 @media screen and (max-width: 576px) {
     #Home .caption h1 {
-        font-size: 30px;
+        margin-bottom: .5rem;
+        text-align: center;
     }
 
     #Home .caption .title p {
@@ -822,8 +891,9 @@ header {
     max-width: fit-content;
     flex-wrap: wrap;
     border-radius: 30px;
+    padding: 10px 0;
     border: 1px dashed var(--font-icon-color);
-    margin: 0;
+    margin: 0 1rem;
 }
 
 #Portfolio .row .tabs ul li {
@@ -850,6 +920,7 @@ header {
 #Portfolio #proNum {
     margin-bottom: 2rem;
     text-align: center;
+    user-select: none;
 }
 
 #Portfolio #proNum p {

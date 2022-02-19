@@ -164,6 +164,19 @@ let proNumDiv = document.getElementById('proNum');
 proNumDiv.innerHTML =  `<p>All Projects: <span>${projects.length}</span></p>`;
 
 // ////////////////////////////////////////////////////////////////
+// count department only
+let departArr = [];
+
+function collectNumber(depart){
+    for(var i=0 ; i < projects.length ; i++) {
+        if(projects[i]['class'] == depart) {
+            departArr.push(projects[i]);
+        }
+    }
+    return departArr.length;
+}
+
+// ////////////////////////////////////////////////////////////////
 // appear spacific projects when click on tabs
 let tabs = document.querySelectorAll('#Portfolio .tabs ul li a');
 
@@ -174,8 +187,6 @@ let oop = document.querySelectorAll('.OOP');
 let react = document.querySelectorAll('.React');
 // let backend = document.querySelectorAll('.Backend');
 let fullStack = document.querySelectorAll('.Full');
-
-console.log(react);
 
 // add clicked class to clicked tabs
 tabs.forEach((tab)=>{
@@ -199,51 +210,112 @@ tabs.forEach((tab)=>{
             ele.style.display = 'none';
         }) 
 
-
         // appear projects by selected tab
         switch (selectedTabVal) {
             case 'All':
                 all.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${projects.length}</span></p>`;
                 break;
 
             case 'Frontend':
                 frontend.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
+                collectNumber(selectedTabVal);
+                departArr = [];
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
                 break;
 
             case 'Js':
                 javaScript.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
+                collectNumber(selectedTabVal);
+                departArr = [];
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
                 break;
 
             case 'OOP':
                 oop.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
+                collectNumber(selectedTabVal);
+                departArr = [];
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
                 break;
                 
             case 'React':
                 react.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
+                collectNumber(selectedTabVal);
+                departArr = [];
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
                 break;
 
             // case 'Backend':
             //     backend.forEach((ele)=>{
             //         ele.style.display = 'block';
             //     })
+            // collectNumber(selectedTabVal);
+            // departArr = [];
+            // proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
             //     break;
 
             case 'Full':
                 fullStack.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
+                collectNumber(selectedTabVal);
+                departArr = [];
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
                 break;
         }
-         
     })
 })
+
+// ////////////////////////////////////////////////////////////////
+// create color boxes
+let colors = ['#00A3E1','#008FB2','#009B9E','#00A77D','#00B247','#5AB027','#A0B61E'];
+let colorBox = document.querySelector('.colors');
+
+for(var i = 0 ; i < colors.length ; i++) {
+    colorBox.innerHTML += `<span style="background-color: ${colors[i]};"></span>`;
+}
+
+// ////////////////////////////////////////////////////////////////
+// when click on color change root --changerColor property by this color
+let colorSpans = document.querySelectorAll('.colors span');
+let root = document.documentElement;
+
+colorSpans.forEach((colorSpan)=>{
+
+    colorSpan.addEventListener('click',function(e){
+        let colorSelected = e.target.style.backgroundColor;
+        root.style.setProperty('--changerColor', colorSelected);
+    })
+
+})
+
+// ////////////////////////////////////////////////////////////////
+// show & hide setting box
+
+let gear = document.querySelector('.setting-icon i')
+let setting_box = document.querySelector('.setting')
+
+gear.addEventListener('click',function(){
+    if(setting_box.classList[1] == 'off'){
+        setting_box.classList.remove('off');
+        setting_box.classList.add('on');
+    } else {
+        setting_box.classList.remove('on');
+        setting_box.classList.add('off');
+    }
+});
+
+// ////////////////////////////////////////////////////////////////
+// hide setting box after 4s
+let hide_setting_box = setInterval(()=>{setting_box.classList.add('off')},4000)
+setTimeout(()=>{clearInterval(hide_setting_box)},4000);
