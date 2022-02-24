@@ -180,7 +180,7 @@ const projects = [
         'name' : 'care zone',
         'project-url' : 'https://aziz3010.github.io/care-zone/',
         'project-pic-url' : 'care-zone',
-        'project-name' : 'care zone',
+        'project-name' : 'car zone',
         'class': 'Frontend'
     }
 ];
