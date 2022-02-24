@@ -144,6 +144,7 @@ projects.forEach((project)=>{
                     <span></span>
                     <span></span>
                 </div>
+                <p class="site-title">${project['name']}</p>
                 <div class="link">
                     <a target="_blank" href=${project['project-url']}>
                         <i class="fa-solid fa-link"></i>
