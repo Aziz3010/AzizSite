@@ -320,3 +320,58 @@ gear.addEventListener('click',function(){
 // hide setting box after 4s
 let hide_setting_box = setInterval(()=>{setting_box.classList.add('off')},4000)
 setTimeout(()=>{clearInterval(hide_setting_box)},4000);
+
+// ////////////////////////////////////////////////////////////////
+// send data from contact form to my Email
+let form = document.getElementById("contact-form");
+
+form.onsubmit = function(e){
+    e.preventDefault();
+    validate();
+}
+
+// validate on form
+function validate(){
+    let visitorName = document.getElementById("Name");
+    let visitorEmail = document.getElementById("Email");
+    let visitorMSG = document.getElementById("MSG");
+    
+    if(visitorName.value == '' || visitorEmail.value == '' || visitorMSG.value == ''){
+        inputsEmpty();
+    } else {
+        sendEmail(visitorName.value, visitorEmail.value, visitorMSG.value);
+        successPopUp();
+    }
+};
+
+
+function sendEmail(visitorName, visitorEmail, visitorMSG){
+    // use emailJs
+    emailjs.send("service_9kijyjw","template_d664m7r",{
+        user_subject: "AzizSite...",
+        user_name: visitorName,
+        user_email: visitorEmail,
+        user_message: visitorMSG,
+    });
+}
+
+// swal func for popup Msgs
+function successPopUp(){
+    swal({
+        title: "Thank You",
+        text: "Succesfully sent message",
+        icon: "success",
+        button: "Ok",
+    });
+}
+
+function inputsEmpty(){
+    swal({
+        title: "Oops...!!",
+        text: "All inputs are required!",
+        icon: "error",
+        button: "Try again",
+    });
+}
+
+// ////////////////////////////////////////////////////////////////

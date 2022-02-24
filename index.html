@@ -652,12 +652,12 @@
             </div>
 
             <!-- form -->
-            <form>
+            <form id="contact-form">
 
                 <div class="top-inp">
                     <div class="inp-group">
-                        <input type="text" name="name" id="name" required>
-                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="Name" required>
+                        <label for="Name">Name</label>
                     </div>
                     <div class="inp-group">
                         <input type="Email" name="Email" id="Email" required>
@@ -667,11 +667,11 @@
 
                 <div class="textarea-group">
                     <textarea name="MSG" id="MSG" required></textarea>
-                    <label for="MSG">How Can I Help You?</label>
+                    <label for="MSG">Your message...</label>
                 </div>
 
                 <div class="button-box">
-                    <button>Send Message</button>
+                    <button id="send-button">Send Message</button>
                 </div>
 
 
@@ -717,6 +717,18 @@
     </section>
     <!-- End Contact -->
 
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_ov1IBGxiYwN54W8EQzDx2");
+        })();
+    </script>
+    <!-- EmailJS -->
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- sweet alert -->
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.min.js"></script>
