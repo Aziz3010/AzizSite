@@ -954,13 +954,6 @@ header {
     background-color: var(--border-header-burger);
 }
 
-#Portfolio .row#projects #project .top-box .site-title {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: var(--changerColor);
-}
-
 #Portfolio .row#projects #project .top-box .spans {
     display: flex;
     justify-content: flex-start;
@@ -980,6 +973,14 @@ header {
     margin-right: 0px;
 
 }
+
+#Portfolio .row#projects #project .top-box .site-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--changerColor);
+}
+
 
 #Portfolio .row#projects #project .top-box .link a {
     color: var(--changerColor);
