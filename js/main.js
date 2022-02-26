@@ -186,7 +186,7 @@ let frontend = document.querySelectorAll('.Frontend');
 let javaScript = document.querySelectorAll('.Js');
 let oop = document.querySelectorAll('.OOP');
 let react = document.querySelectorAll('.React');
-// let backend = document.querySelectorAll('.Backend');
+let backend = document.querySelectorAll('.Backend');
 let fullStack = document.querySelectorAll('.Full');
 
 // add clicked class to clicked tabs
@@ -256,14 +256,14 @@ tabs.forEach((tab)=>{
                 proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
                 break;
 
-            // case 'Backend':
-            //     backend.forEach((ele)=>{
-            //         ele.style.display = 'block';
-            //     })
-            // collectNumber(selectedTabVal);
-            // departArr = [];
-            // proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
-            //     break;
+            case 'Backend':
+                backend.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+            collectNumber(selectedTabVal);
+            departArr = [];
+            proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
+                break;
 
             case 'Full':
                 fullStack.forEach((ele)=>{

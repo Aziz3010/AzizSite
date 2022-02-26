@@ -182,6 +182,14 @@ const projects = [
         'project-pic-url' : 'care-zone',
         'project-name' : 'car zone',
         'class': 'Frontend'
+    },
+    {    
+        'project-id' : 24,
+        'name' : 'Shopping & Cart',
+        'project-url' : 'http://shoppingwithcart.rf.gd/',
+        'project-pic-url' : 'Shopping-Cart-php',
+        'project-name' : 'Shopping & Cart',
+        'class': 'Backend'
     }
 ];
 
