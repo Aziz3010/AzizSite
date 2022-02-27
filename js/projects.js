@@ -190,6 +190,14 @@ const projects = [
         'project-pic-url' : 'Shopping-Cart-php',
         'project-name' : 'Shopping & Cart',
         'class': 'Backend'
+    },
+    {    
+        'project-id' : 25,
+        'name' : 'Dentist Care',
+        'project-url' : 'NotFound.html',
+        'project-pic-url' : 'Dentist-Care',
+        'project-name' : 'Dentist Care',
+        'class': 'Full'
     }
 ];
 
