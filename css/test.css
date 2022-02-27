@@ -1,0 +1,53 @@
+body {
+    background-color: #2C2D2F;
+    color: #fff;
+}
+
+#About {
+    background-color: var(--background-section);
+    padding: 3rem 0;
+}
+
+.accordion {
+    background-color: crimson;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.accordion .panel-heading {
+    padding: 10px 0rem 10px 1rem;
+    margin: 0;
+    /* background-color: var(--changerColor); */
+    background-color: coral;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion .panel-heading h4 {
+    margin: 0;
+}
+
+
+.accordion .panel-heading i {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+
+
+.panel-content {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 10s;
+}
+
+.panel-content.active {
+    height: auto;
+}
+
+.panel-content p {
+    margin: 1rem ;
+}
