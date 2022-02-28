@@ -718,6 +718,7 @@ header {
 #About .about-Me .panel-content .download a {
     margin: 5px 5px 5px 0px;
     display: inline-block;
+    text-decoration: none;
 }
 
 #About .about-Me .panel-content .download a span {
