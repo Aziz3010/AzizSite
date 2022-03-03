@@ -198,6 +198,14 @@ const projects = [
         'project-pic-url' : 'Dentist-Care',
         'project-name' : 'Dentist Care',
         'class': 'Full'
+    },
+    {    
+        'project-id' : 26,
+        'name' : 'Admin Dashboard',
+        'project-url' : 'https://github.com/Aziz3010/admin-dashboard',
+        'project-pic-url' : 'admin-dashboard',
+        'project-name' : 'Admin Dashboard',
+        'class': 'React'
     }
 ];
 
