@@ -206,6 +206,14 @@ const projects = [
         'project-pic-url' : 'admin-dashboard',
         'project-name' : 'Admin Dashboard',
         'class': 'React'
+    },
+    {    
+        'project-id' : 27,
+        'name' : 'restaurant react',
+        'project-url' : 'https://restaurant-by-react.netlify.app/',
+        'project-pic-url' : 'restaurant-react',
+        'project-name' : 'restaurant react',
+        'class': 'React'
     }
 ];
 
