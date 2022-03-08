@@ -219,7 +219,7 @@ const projects = [
         'project-id' : 28,
         'name' : 'Delivery Food App',
         'project-url' : 'https://deliveryfoodapp.netlify.app/',
-        'project-pic-url' : 'deliveryapp.jpg',
+        'project-pic-url' : 'deliveryapp.JPG',
         'project-name' : 'Delivery Food App',
         'class': 'React'
     }
