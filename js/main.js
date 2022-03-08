@@ -153,7 +153,7 @@ projects.forEach((project)=>{
                 </div>
             </div>
             <div class="web-pic">
-                <img src="./img/${project['project-pic-url']}.png" alt=${project['project-name']}>
+                <img src="./img/${project['project-pic-url']}" alt=${project['project-name']}>
             </div>
         </div>
     </div> `
