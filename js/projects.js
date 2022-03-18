@@ -178,7 +178,7 @@ const projects = [
     {    
         'project-id' : 23,
         'name' : 'car zone',
-        'project-url' : 'https://aziz3010.github.io/care-zone/',
+        'project-url' : 'https://aziz3010.github.io/car-zone/',
         'project-pic-url' : 'care-zone.png',
         'project-name' : 'car zone',
         'class': 'Frontend'
