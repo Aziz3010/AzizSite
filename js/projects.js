@@ -222,6 +222,14 @@ const projects = [
         'project-pic-url' : 'deliveryfoodapp.png',
         'project-name' : 'Delivery Food App',
         'class': 'React'
+    },
+    {    
+        'project-id' : 29,
+        'name' : 'Calculator',
+        'project-url' : 'https://aziz3010.github.io/calculator/',
+        'project-pic-url' : 'calculator.png',
+        'project-name' : 'Calculator',
+        'class': 'Js'
     }
 ];
 
