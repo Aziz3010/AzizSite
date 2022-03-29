@@ -230,6 +230,14 @@ const projects = [
         'project-pic-url' : 'calculator.png',
         'project-name' : 'Calculator',
         'class': 'Js'
+    },
+    {    
+        'project-id' : 30,
+        'name' : 'vuexy-dashboard',
+        'project-url' : 'https://aziz3010.github.io/vuexy-dashboard/',
+        'project-pic-url' : 'vuexy-dashboard.png',
+        'project-name' : 'vuexy-dashboard',
+        'class': 'Frontend'
     }
 ];
 
