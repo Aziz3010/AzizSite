@@ -238,6 +238,14 @@ const projects = [
         'project-pic-url' : 'vuexy-dashboard.png',
         'project-name' : 'vuexy-dashboard',
         'class': 'Frontend'
+    },
+    {    
+        'project-id' : 31,
+        'name' : 'todo app',
+        'project-url' : 'https://aziz-todo-vue-app.netlify.app/',
+        'project-pic-url' : 'todo-vue-app.png',
+        'project-name' : 'todo app',
+        'class': 'Vue'
     }
 ];
 

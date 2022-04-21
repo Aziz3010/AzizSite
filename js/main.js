@@ -186,6 +186,7 @@ let frontend = document.querySelectorAll('.Frontend');
 let javaScript = document.querySelectorAll('.Js');
 let oop = document.querySelectorAll('.OOP');
 let react = document.querySelectorAll('.React');
+let Vue = document.querySelectorAll('.Vue');
 let backend = document.querySelectorAll('.Backend');
 let fullStack = document.querySelectorAll('.Full');
 
@@ -249,6 +250,15 @@ tabs.forEach((tab)=>{
                 
             case 'React':
                 react.forEach((ele)=>{
+                    ele.style.display = 'block';
+                })
+                collectNumber(selectedTabVal);
+                departArr = [];
+                proNumDiv.innerHTML =  `<p>All Projects: <span>${collectNumber(selectedTabVal)}</span></p>`;
+                break;
+
+            case 'Vue':
+                Vue.forEach((ele)=>{
                     ele.style.display = 'block';
                 })
                 collectNumber(selectedTabVal);
