@@ -128,7 +128,7 @@ let loading_page = document.getElementById('loading-page');
 
 setTimeout( function(){
     loading_page.classList.add('loading-page-disappear');
-}, 2000)
+}, 1300)
 
 
 // import projects from projects.js file  and append it in projects div
@@ -147,7 +147,7 @@ projects.forEach((project)=>{
                 <p class="site-title">${project['name']}</p>
                 <div class="link">
                     <a target="_blank" href=${project['project-url']}>
-                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-eye"></i>
                         Live
                     </a>
                 </div>

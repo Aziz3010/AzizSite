@@ -1041,28 +1041,36 @@ header {
     margin-right: 4px;
 }
 
+#Portfolio .row#projects #project .top-box .spans span:nth-child(2) {
+    background-color: var(--font-icon-color);
+}
+
 #Portfolio .row#projects #project .top-box .spans span:last-child {
     margin-right: 0px;
-
+    background-color: var(--font-icon-color);
 }
 
 #Portfolio .row#projects #project .top-box .site-title {
     margin: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 13px;
-    color: var(--changerColor);
+    color: #fff;
 }
 
 
 #Portfolio .row#projects #project .top-box .link a {
-    color: var(--changerColor);
+    color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #Portfolio .row#projects #project .top-box .link i {
-    color: var(--changerColor);
-    font-size: 17px;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 3px;
 }
 
 #Portfolio .row#projects #project .web-pic {
