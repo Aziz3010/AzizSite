@@ -246,6 +246,22 @@ const projects = [
         'project-pic-url' : 'todo-vue-app.jpg',
         'project-name' : 'todo app',
         'class': 'Vue'
+    },
+    {    
+        'project-id' : 32,
+        'name' : 'food recipe',
+        'project-url' : '../NotFound.html',
+        'project-pic-url' : 'food-recipe.jpg',
+        'project-name' : 'food recipe',
+        'class': 'React'
+    },
+    {    
+        'project-id' : 33,
+        'name' : 'ecommerce app',
+        'project-url' : '../NotFound.html',
+        'project-pic-url' : 'ecommerce-app.jpg',
+        'project-name' : 'ecommerce app',
+        'class': 'React'
     }
 ];
 
