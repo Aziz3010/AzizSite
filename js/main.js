@@ -128,7 +128,7 @@ let loading_page = document.getElementById('loading-page');
 
 setTimeout( function(){
     loading_page.classList.add('loading-page-disappear');
-}, 1300)
+}, 300)
 
 
 // import projects from projects.js file  and append it in projects div
