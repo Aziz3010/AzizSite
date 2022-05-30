@@ -262,6 +262,14 @@ const projects = [
         'project-pic-url' : 'ecommerce-app.jpg',
         'project-name' : 'ecommerce app',
         'class': 'React'
+    },
+    {    
+        'project-id' : 34,
+        'name' : 'Real state',
+        'project-url' : 'https://real-estate-coral.vercel.app/',
+        'project-pic-url' : 'real-estate-app.jpg',
+        'project-name' : 'Real state',
+        'class': 'React'
     }
 ];
 
